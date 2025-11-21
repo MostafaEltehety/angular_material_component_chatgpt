@@ -1,0 +1,41 @@
+<mat-chip>Angular</mat-chip>
+<mat-chip-set>
+  <mat-chip>Angular</mat-chip>
+  <mat-chip>React</mat-chip>
+  <mat-chip>Vue</mat-chip>
+</mat-chip-set>
+<mat-chip-set>
+  <mat-chip selectable="true">Option 1</mat-chip>
+  <mat-chip selectable="true">Option 2</mat-chip>
+</mat-chip-set>
+<mat-chip-set removable="true" (remove)="removeChip('Angular')">
+  <mat-chip
+    >Angular
+    <mat-icon matChipRemove>cancel</mat-icon>
+  </mat-chip>
+</mat-chip-set>
+<mat-chip selected
+  >Featured
+  <mat-icon>star</mat-icon>
+</mat-chip>
+<mat-chip> <img src="https://i.pravatar.cc/50" /> User </mat-chip>
+
+<br />
+<hr />
+
+<mat-chip-grid #chipList aria-label="Tag Selection">
+  @for (item of tags; track $index) {
+  <mat-chip-row [removable]="true" (removed)="removeChip(item)">
+    {{item}}
+  </mat-chip-row>
+  }
+<mat-form-field appearance="outline">
+<mat-label>Add New Tag</mat-label>
+  <input matInput
+    placeholder="New Tag..."
+    [matChipInputFor]="chipList"
+    (matChipInputTokenEnd)="add($event)"
+    [matChipInputSeparatorKeyCodes]="speratorKeys"
+  />
+</mat-form-field>
+</mat-chip-grid>

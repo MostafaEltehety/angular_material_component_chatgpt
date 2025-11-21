@@ -1,0 +1,32 @@
+<mat-form-field appearance="outline" class="w-100">
+  <mat-label>Choose a country </mat-label>
+  <input
+    type="text"
+    matInput
+    [formControl]="countryControl"
+    [matAutocomplete]="auto"
+    placeholder="type to search country"
+  />
+
+  <mat-autocomplete #auto="matAutocomplete">
+    @for (item of filerdOpition; track $index) {
+    <mat-option [value]="item">{{item}}</mat-option>
+    }
+  </mat-autocomplete>
+</mat-form-field>
+
+<mat-form-field appearance="outline">
+  <mat-label>Choose Employee</mat-label>
+  <input
+    type="text"
+    matInput
+    [matAutocomplete]="emps"
+    [formControl]="employeeControl"
+
+  />
+  <mat-autocomplete #emps="matAutocomplete" [displayWith]="displayEmployee" (optionSelected)="onSelect($event)">
+   @for (item of filredEmps; track $index) {
+    <mat-option [value]="item">{{item.name}}</mat-option>
+    }
+  </mat-autocomplete>
+</mat-form-field>

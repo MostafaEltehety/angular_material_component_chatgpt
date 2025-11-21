@@ -1,0 +1,10 @@
+<mat-form-field appearance="outline">
+<mat-label>Email</mat-label>
+<input matInput [formControl]="email">
+@if(email.hasError('required')){
+<mat-error>Email is required</mat-error>
+}
+@if(email.hasError('email')){
+  <mat-error>Invalid email format</mat-error>
+}
+</mat-form-field>

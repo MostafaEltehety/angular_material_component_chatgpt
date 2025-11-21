@@ -1,0 +1,26 @@
+.wa-container {
+  padding: 5px;
+}
+
+.title {
+  margin: 0 0 15px 0;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+mat-icon {
+  margin-right: 15px;
+  color: #fdfdfd;   // WhatsApp green
+}
+
+a.mat-list-item {
+  border-radius: 10px;
+  margin-bottom: 5px;
+}
+
+a.mat-list-item:hover {
+  background: rgba(203, 231, 213, 0.537);
+}
+span{
+  color: #fdfdfd;
+}

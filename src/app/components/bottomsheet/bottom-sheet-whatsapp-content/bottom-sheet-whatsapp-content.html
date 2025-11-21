@@ -1,0 +1,34 @@
+<div class="wa-container">
+  <h3>Choose Action</h3>
+
+  <mat-nav-list>
+<a mat-list-item (click)="select('New Group')">
+<mat-icon>groups</mat-icon>
+<span>New Group</span>
+</a>
+
+<a mat-list-item (click)="select('New Broadcast')">
+<mat-icon>campaign</mat-icon>
+<span>New Broadcast</span>
+</a>
+
+
+
+<a mat-list-item (click)="select('Linked Devices')">
+<mat-icon>devices</mat-icon>
+<span>Linked Devices</span>
+</a>
+
+
+    <a mat-list-item (click)="select('Starred Messages')">
+      <mat-icon>star</mat-icon>
+      <span>Starred Messages</span>
+    </a>
+
+    <a mat-list-item (click)="select('Settings')">
+      <mat-icon>settings</mat-icon>
+      <span>Settings</span>
+    </a>
+
+  </mat-nav-list>
+</div>

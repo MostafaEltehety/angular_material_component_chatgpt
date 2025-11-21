@@ -1,0 +1,68 @@
+<h3>Text Styles</h3>
+
+
+
+<mat-button-toggle class="margin">Bold</mat-button-toggle>
+
+<mat-button-toggle-group class="margin" name="fontStyle" appearance="standard">
+<mat-button-toggle value="bold">Bold</mat-button-toggle>
+<mat-button-toggle value="italic">Italic</mat-button-toggle>
+<mat-button-toggle value="underline">Underline</mat-button-toggle>
+</mat-button-toggle-group>
+
+<mat-button-toggle-group class="margin" name="fontStyle" appearance="legacy">
+<mat-button-toggle value="bold">Bold</mat-button-toggle>
+<mat-button-toggle value="italic">Italic</mat-button-toggle>
+<mat-button-toggle value="underline">Underline</mat-button-toggle>
+</mat-button-toggle-group>
+
+<mat-button-toggle-group  class="margin" multiple>
+  <mat-button-toggle value="bold">Bold</mat-button-toggle>
+  <mat-button-toggle value="italic">Italic</mat-button-toggle>
+  <mat-button-toggle value="underline">Underline</mat-button-toggle>
+</mat-button-toggle-group>
+
+<mat-button-toggle-group  class="margin">
+
+  <mat-button-toggle>
+    <mat-icon>format_bold</mat-icon>
+  </mat-button-toggle>
+  <mat-button-toggle>
+    <mat-icon>format_italic</mat-icon>
+  </mat-button-toggle>
+  <mat-button-toggle>
+    <mat-icon>format_underline</mat-icon>
+  </mat-button-toggle>
+</mat-button-toggle-group>
+
+<mat-button-toggle-group  class="margin" vertical="">
+<mat-button-toggle value="left">Left</mat-button-toggle>
+<mat-button-toggle value="center">Center</mat-button-toggle>
+<mat-button-toggle value="right">Right</mat-button-toggle>
+
+</mat-button-toggle-group>
+
+
+
+<mat-button-toggle-group (change)="changMode($event)">
+<mat-button-toggle value="light">Light</mat-button-toggle>
+<mat-button-toggle value="dark">Dark</mat-button-toggle>
+</mat-button-toggle-group>
+
+<br><hr>
+<h3>Text Styles</h3>
+
+<mat-button-toggle-group multiple [formControl]="styles" (change)="applyStyles()">
+  <mat-button-toggle value="bold">
+    <mat-icon>format_bold</mat-icon>
+  </mat-button-toggle>
+<mat-button-toggle value="italic">
+  <mat-icon>format_italic</mat-icon>
+</mat-button-toggle>
+<mat-button-toggle value="underline">
+  <mat-icon>format_underline</mat-icon>
+</mat-button-toggle>
+</mat-button-toggle-group>
+<h3 [ngStyle]="applyStyles()">This example text</h3>
+
+

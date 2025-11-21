@@ -1,0 +1,16 @@
+ <mat-form-field appearance="outline">
+<mat-label>Birth Date</mat-label>
+<input  matInput [matDatepicker]="birthPicker">
+<mat-datepicker #birthPicker ></mat-datepicker>
+<mat-datepicker-toggle matPrefix [for]="birthPicker"></mat-datepicker-toggle>
+ </mat-form-field>
+
+ <mat-form-field appearance="outline">
+  <mat-label>Enter a date range</mat-label>
+ <mat-date-range-input [rangePicker]="ragePicker">
+   <input matStartDate  placeholder="Start Date">
+  <input matEndDate  placeholder="End Date">
+ </mat-date-range-input>
+ <mat-datepicker-toggle matSuffix [for]="ragePicker"></mat-datepicker-toggle>
+  <mat-date-range-picker #ragePicker  ></mat-date-range-picker>
+ </mat-form-field>

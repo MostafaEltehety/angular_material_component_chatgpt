@@ -1,0 +1,17 @@
+<mat-checkbox>Accept Terms</mat-checkbox>
+<mat-checkbox [(ngModel)]="isActive">Is Active</mat-checkbox>
+<p>Is Active : {{isActive}}</p>
+<mat-checkbox disabled>You cannot check me</mat-checkbox>
+
+<mat-checkbox [indeterminate]="true"> Partially Selected </mat-checkbox>
+<mat-checkbox (change)="notifyMy($event)"> Notify my </mat-checkbox>
+
+<h3></h3>
+
+<mat-checkbox (change)="toggleAll()" [(ngModel)]="selectedAll"
+  >Select All</mat-checkbox>
+<div style="margin-left: 20px">
+  <mat-checkbox [(ngModel)]="items.item1" (change)="checkIfAllSelected()">Opition 1</mat-checkbox>
+  <mat-checkbox [(ngModel)]="items.item2" (change)="checkIfAllSelected()">Opition 2</mat-checkbox>
+  <mat-checkbox [(ngModel)]="items.item3" (change)="checkIfAllSelected()">Opition 3</mat-checkbox>
+</div>

@@ -1,0 +1,28 @@
+.custom-sheet .mat-bottom-sheet-container{
+padding: 20px;
+border-radius: 20px 20px 0 0;
+}
+
+::ng-deep .wa-sheet .mat-bottom-sheet-container {
+  border-radius: 20px 20px 0 0;
+  padding: 20px;
+  background: #138922;
+  animation: slideUp 230ms ease-out;
+  color: white;
+}
+
+@keyframes slideUp {
+  from {
+    transform: translateY(80%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/* blurred background */
+::ng-deep .mat-bottom-sheet-backdrop.mat-bottom-sheet-backdrop-showing {
+  backdrop-filter: blur(3px);
+}

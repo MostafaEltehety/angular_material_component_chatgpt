@@ -1,0 +1,13 @@
+ <h2 mat-dialog-title>Dailog Title</h2>
+
+<mat-dialog-content>
+  <h3>This is the simple dialog content</h3>
+  <p>Id : {{data.id}}</p>
+  <p>Name : {{data.name}}</p>
+  <p>Salary : {{data.salary}}</p>
+</mat-dialog-content>
+
+<mat-dialog-actions align="end">
+  <!-- <button mat-raised-button mat-dialog-close>Close</button> -->
+  <button mat-raised-button mat-dialog-close="Hello From Back">Close</button>
+</mat-dialog-actions>
