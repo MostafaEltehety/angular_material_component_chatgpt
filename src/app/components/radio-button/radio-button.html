@@ -1,0 +1,26 @@
+<form [formGroup]="form">
+
+ <mat-radio-group formControlName="gender" >
+<mat-radio-button value="male">Male</mat-radio-button>
+<mat-radio-button value="female">Female</mat-radio-button>
+</mat-radio-group>
+
+  <p>Gender : {{form.value.gender}}</p>
+</form>
+
+
+
+
+<mat-radio-group [(ngModel)]="payment">
+<mat-list-item>
+  <mat-radio-button value="visa">Visa</mat-radio-button>
+</mat-list-item>
+<mat-list-item>
+  <mat-radio-button value="paybal">PayPal</mat-radio-button>
+</mat-list-item>
+<mat-list-item>
+  <mat-radio-button value="vodafone_cash">Vodafone Cash</mat-radio-button>
+</mat-list-item>
+</mat-radio-group>
+
+<p>Payment method : {{payment}}</p>

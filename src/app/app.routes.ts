@@ -13,6 +13,12 @@ import { ExpansionPanel } from './components/expansion-panel/expansion-panel';
 import { FormField } from './components/form-field/form-field';
 import { GridList } from './components/grid-list/grid-list';
 import { List } from './components/list/list';
+import { Menu } from './components/menu/menu';
+import { Paginator } from './components/paginator/paginator';
+import { Progress } from './components/progress/progress';
+import { RadioButton } from './components/radio-button/radio-button';
+import { Ripple } from './components/ripple/ripple';
+import { Select } from './components/select/select';
 
 export const routes: Routes = [
   {path:'autoCompelete',component:Autocomplete},
@@ -29,4 +35,11 @@ export const routes: Routes = [
   {path:'form-field',component:FormField},
   {path:'grid-list',component:GridList},
   {path:'list',component:List},
+  {path:'menu',component:Menu},
+{path:'paginator',component:Paginator},
+{path:'progress',component:Progress},
+{path:'radioBtn',component:RadioButton},
+{path:'ripple',component:Ripple},
+{path:'select',component:Select},
+
 ];

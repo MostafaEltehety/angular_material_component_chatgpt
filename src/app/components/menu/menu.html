@@ -1,0 +1,36 @@
+<button mat-raised-button [matMenuTriggerFor]="menuId">Menu</button>
+
+<mat-menu #menuId>
+  <button mat-menu-item>Item 1</button>
+  <button mat-menu-item>Item 2</button>
+  <button mat-menu-item>Item 3</button>
+</mat-menu>
+
+
+<button mat-stroked-button [matMenuTriggerFor]="menuIcon">Menu Icons</button>
+
+ <mat-menu #menuIcon>
+  <button mat-menu-item>
+    <mat-icon>person</mat-icon>Profile
+  </button>
+  <button mat-menu-item>
+    <mat-icon>logout</mat-icon>Logout
+  </button>
+
+  <button mat-menu-item [matMenuTriggerFor]="menuSettingId">
+    <mat-icon>settings</mat-icon>Settings
+  </button>
+</mat-menu>
+
+<button mat-raised-button [matMenuTriggerFor]="menuIcon">
+  <mat-icon>more_vert</mat-icon>
+</button>
+
+<mat-menu #menuSettingId>
+<button mat-menu-item>Language</button>
+<button mat-menu-item>Dark</button>
+</mat-menu>
+
+
+
+

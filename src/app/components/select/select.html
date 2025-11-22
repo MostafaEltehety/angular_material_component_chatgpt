@@ -1,0 +1,28 @@
+<mat-form-field appearance="outline">
+  <mat-label>Select Country</mat-label>
+  <mat-select [(ngModel)]="country">
+<mat-option value="egypt">Egypt</mat-option>
+<mat-option value="uae">UAE</mat-option>
+<mat-option value="sauid">Sauid Arab</mat-option>
+</mat-select>
+</mat-form-field>
+
+<p>Country : {{country}}</p>
+<form [formGroup]="form">
+<mat-form-field  appearance="outline">
+<mat-label>Select your city</mat-label>
+<mat-select formControlName="city">
+ @for (item of cities; track $index) {
+  <mat-option [value]="item">{{item}}</mat-option>
+ }
+</mat-select>
+</mat-form-field>
+</form>
+<p>Your City : {{form.value.city}}</p>
+
+<mat-form-field appearance="outline">
+<mat-label>Select Skills</mat-label>
+<mat-select [(ngModel)]="">
+
+</mat-select>
+</mat-form-field>
