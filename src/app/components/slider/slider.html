@@ -1,0 +1,13 @@
+<form [formGroup]="form">
+
+<mat-slider >
+  <input matSliderThumb formControlName="sound">
+</mat-slider>
+<mat-slider showTickMarks >
+  <input matSliderThumb formControlName="sound">
+</mat-slider>
+
+
+</form>
+<p>{{form.value.sound}}</p>
+

@@ -19,27 +19,39 @@ import { Progress } from './components/progress/progress';
 import { RadioButton } from './components/radio-button/radio-button';
 import { Ripple } from './components/ripple/ripple';
 import { Select } from './components/select/select';
+import { Sidenav } from './components/sidenav/sidenav';
+import { SlidToggle } from './components/slid-toggle/slid-toggle';
+import { Slider } from './components/slider/slider';
+import { Snackbar } from './components/snackbar/snackbar';
+import { Stepper } from './components/stepper/stepper';
+import { Table } from './components/table/table';
 
 export const routes: Routes = [
-  {path:'autoCompelete',component:Autocomplete},
-  {path:'badge',component:Badge},
-  {path:'bottom-sheet',component:Bottomsheet},
-  {path:'buttons',component:Buttons},
-  {path:'button-toggle',component:ButtonToggle},
-  {path:'card',component:Card},
-  {path:'checkbox',component:Checkbox},
-  {path:'chip',component:Chip},
-  {path:'datepicker',component:Datepicker},
-  {path:'dailog',component:Dailog},
-  {path:'expansion-panel',component:ExpansionPanel},
-  {path:'form-field',component:FormField},
-  {path:'grid-list',component:GridList},
-  {path:'list',component:List},
-  {path:'menu',component:Menu},
-{path:'paginator',component:Paginator},
-{path:'progress',component:Progress},
-{path:'radioBtn',component:RadioButton},
-{path:'ripple',component:Ripple},
-{path:'select',component:Select},
+  { path: 'autoCompelete', component: Autocomplete },
+  { path: 'badge', component: Badge },
+  { path: 'bottom-sheet', component: Bottomsheet },
+  { path: 'buttons', component: Buttons },
+  { path: 'button-toggle', component: ButtonToggle },
+  { path: 'card', component: Card },
+  { path: 'checkbox', component: Checkbox },
+  { path: 'chip', component: Chip },
+  { path: 'datepicker', component: Datepicker },
+  { path: 'dailog', component: Dailog },
+  { path: 'expansion-panel', component: ExpansionPanel },
+  { path: 'form-field', component: FormField },
+  { path: 'grid-list', component: GridList },
+  { path: 'list', component: List },
+  { path: 'menu', component: Menu },
+  { path: 'paginator', component: Paginator },
+  { path: 'progress', component: Progress },
+  { path: 'radioBtn', component: RadioButton },
+  { path: 'ripple', component: Ripple },
+  { path: 'select', component: Select },
+  { path: 'sidenav', component: Sidenav },
+  { path: 'slid-toggle', component: SlidToggle },
+  { path: 'slider', component: Slider },
+  { path: 'snackbar', component: Snackbar },
+  { path: 'stepper', component: Stepper },
+{path:'table',component:Table},
 
 ];

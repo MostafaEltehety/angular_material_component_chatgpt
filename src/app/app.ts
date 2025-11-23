@@ -8,5 +8,8 @@ import {MatButtonModule} from '@angular/material/button';
   styleUrl: './app.scss'
 })
 export class App {
+OpenWin() {
+window.open('/#/sidenav', '_blank');
+}
   protected title = 'angular_material_component_chatgpt';
 }
