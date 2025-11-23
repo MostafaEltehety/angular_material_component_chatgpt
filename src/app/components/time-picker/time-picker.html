@@ -1,0 +1,15 @@
+
+<mat-form-field  appearance="outline">
+<mat-label>Choose Time</mat-label>
+<input matInput [matTimepicker]="pickerTime" placeholder="Choose time">
+<mat-timepicker-toggle matPrefix [for]="pickerTime"></mat-timepicker-toggle>
+<mat-timepicker #pickerTime></mat-timepicker>
+</mat-form-field>
+
+
+<mat-form-field>
+  <mat-label>Choose time</mat-label>
+  <input matInput [ngxMatTimepicker]="time">
+<ngx-mat-timepicker-toggle matPrefix [for]="time"></ngx-mat-timepicker-toggle>
+<ngx-mat-timepicker #time></ngx-mat-timepicker>
+</mat-form-field>

@@ -25,6 +25,10 @@ import { Slider } from './components/slider/slider';
 import { Snackbar } from './components/snackbar/snackbar';
 import { Stepper } from './components/stepper/stepper';
 import { Table } from './components/table/table';
+import { Tabs } from './components/tabs/tabs';
+import { TimePicker } from './components/time-picker/time-picker';
+import { Tooltip } from './components/tooltip/tooltip';
+import { Tree } from './components/tree/tree';
 
 export const routes: Routes = [
   { path: 'autoCompelete', component: Autocomplete },
@@ -53,5 +57,8 @@ export const routes: Routes = [
   { path: 'snackbar', component: Snackbar },
   { path: 'stepper', component: Stepper },
 {path:'table',component:Table},
-
+{path:'tabs',component:Tabs},
+{path:'timePicker',component:TimePicker},
+{path:'tooltip',component:Tooltip},
+{path:'tree',component:Tree}
 ];
