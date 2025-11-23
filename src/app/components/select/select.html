@@ -22,7 +22,32 @@
 
 <mat-form-field appearance="outline">
 <mat-label>Select Skills</mat-label>
-<mat-select [(ngModel)]="">
-
+<mat-select [(ngModel)]="selectSkills" multiple>
+@for (item of skills; track $index) {
+  <mat-option [value]="item">{{item}}</mat-option>
+}
 </mat-select>
+</mat-form-field>
+
+<p>Skills : {{selectSkills}}</p>
+
+
+
+ <mat-form-field appearance="outline">
+  <mat-label>Select Employee</mat-label>
+
+  <mat-select [(ngModel)]="selectedEmp"
+              panelClass="emp-panel">
+
+    <mat-option>
+      <input matInput placeholder="Search..."
+             [(ngModel)]="textSerach"
+             (ngModelChange)="filterEmployees()">
+    </mat-option>
+
+    @for (item of filteredEmployees; track $index) {
+      <mat-option [value]="item">{{item}}</mat-option>
+    }
+
+  </mat-select>
 </mat-form-field>
